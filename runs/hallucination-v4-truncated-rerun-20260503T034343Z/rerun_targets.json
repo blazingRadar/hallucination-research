@@ -1,0 +1,34 @@
+[
+  {
+    "condition": "false_anchor_open_structure",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG008_O",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "0b0d515cfa196a559c513c8f040e811703554f574d0a7e6036cd2543abd8888a"
+  },
+  {
+    "condition": "false_anchor_open_structure",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG004_O",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "4d604905b117f85611035ddc755a276ea7bf2ed151b84f224c5705a6a0e980ba"
+  },
+  {
+    "condition": "false_anchor_open_structure",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG007_O",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "227e6ecdcead99da8f1fa74702f6829945371afec3bb8cb4d5f8c00a6bb401b4"
+  },
+  {
+    "condition": "false_anchor_open_structure",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG001_O",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "f86b4352e4657d61d2663f4bdc56326ca599f5935a8b1cdf7b2c4283d3fb9d42"
+  }
+]

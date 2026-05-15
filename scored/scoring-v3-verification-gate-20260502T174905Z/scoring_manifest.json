@@ -1,0 +1,11 @@
+{
+  "batch_size": 4,
+  "created_at_utc": "2026-05-02T17:49:05Z",
+  "credential_values_saved": false,
+  "judge_model": "gpt-5-chat-latest",
+  "judge_provider": "openai",
+  "scoring_rubric": "scoring/SCORING_RUBRIC_VERIFICATION_GATE_V3.md",
+  "scoring_rubric_sha256": "2337d3d3b3df8fda60b171e8987d6343a6feb927f7c3218928a4005f3088af7d",
+  "source_raw_sha256": "19688521b716c04963e3b18fcb3a29013ff9370789d6378e90ae9c8a696fc49e",
+  "source_run": "runs/hallucination-v3-clean-merged-20260502T174849Z"
+}

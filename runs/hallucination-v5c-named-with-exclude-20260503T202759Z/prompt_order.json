@@ -1,0 +1,44 @@
+{
+  "anthropic": [
+    "VG005_SE",
+    "VG002_SE",
+    "VG001_SE",
+    "VG008_SE",
+    "VG007_SE",
+    "VG010_SE",
+    "VG004_SE",
+    "VG012_SE",
+    "VG009_SE",
+    "VG003_SE",
+    "VG011_SE",
+    "VG006_SE"
+  ],
+  "openai": [
+    "VG003_SE",
+    "VG001_SE",
+    "VG006_SE",
+    "VG012_SE",
+    "VG008_SE",
+    "VG011_SE",
+    "VG007_SE",
+    "VG005_SE",
+    "VG010_SE",
+    "VG004_SE",
+    "VG002_SE",
+    "VG009_SE"
+  ],
+  "xai": [
+    "VG001_SE",
+    "VG006_SE",
+    "VG003_SE",
+    "VG011_SE",
+    "VG010_SE",
+    "VG008_SE",
+    "VG002_SE",
+    "VG007_SE",
+    "VG012_SE",
+    "VG005_SE",
+    "VG009_SE",
+    "VG004_SE"
+  ]
+}

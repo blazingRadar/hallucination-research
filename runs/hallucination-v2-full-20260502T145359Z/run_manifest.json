@@ -1,0 +1,39 @@
+{
+  "corpus": "corpus/PROMPT_CORPUS_V2.jsonl",
+  "corpus_sha256": "8807cc82817c82b6eddde7bb047c511f1db6575590c05f68ef2a2dd41373a292",
+  "credential_values_saved": false,
+  "max_tokens": 900,
+  "providers": [
+    {
+      "base_url_host": "api.openai.com",
+      "kind": "openai_compatible",
+      "model": "gpt-5-chat-latest",
+      "provider": "openai",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.anthropic.com",
+      "kind": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.x.ai",
+      "kind": "openai_compatible",
+      "model": "grok-4.3",
+      "provider": "xai",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "127.0.0.1:1234",
+      "kind": "openai_compatible",
+      "model": "qwen/qwen3.5-35b-a3b",
+      "provider": "local_qwen",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v2-full-20260502T145359Z",
+  "seed": "prompt_structure_hallucination_v1_20260502",
+  "started_at_utc": "2026-05-02T14:53:59Z"
+}

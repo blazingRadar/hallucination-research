@@ -1,0 +1,13 @@
+{
+  "addendum_sha256": "73741f3a90800db1a96d4c4063383f3c200fc64f9047e27d3e76b6d48d4a401a",
+  "base_rubric_sha256": "2337d3d3b3df8fda60b171e8987d6343a6feb927f7c3218928a4005f3088af7d",
+  "batch_size": 2,
+  "created_at_utc": "2026-05-03T20:42:32Z",
+  "credential_values_saved": false,
+  "judge_model": "claude-sonnet-4-6",
+  "judge_provider": "anthropic",
+  "scoring_rubric_addendum": "scoring/SCORING_RUBRIC_V4_ADDENDUM.md",
+  "scoring_rubric_base": "scoring/SCORING_RUBRIC_VERIFICATION_GATE_V3.md",
+  "source_raw_sha256": "d5a5f584385a9c9fbfb416c1917775e3e4f9995c290c38e39756b8f83f4f18f7",
+  "source_run": "runs/hallucination-v5c-named-with-exclude-20260503T202759Z"
+}

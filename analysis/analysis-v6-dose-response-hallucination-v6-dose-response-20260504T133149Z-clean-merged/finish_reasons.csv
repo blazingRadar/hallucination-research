@@ -1,0 +1,5 @@
+count,finish_reason,provider
+232,end_turn,anthropic
+8,refusal,anthropic
+240,stop,openai
+240,stop,xai

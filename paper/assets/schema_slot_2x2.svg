@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620" role="img" aria-labelledby="title desc">
+  <title id="title">Closed two by two schema-slot hallucination result</title>
+  <desc id="desc">Named schema slots produced ten of thirty six and fourteen of thirty six hallucination positives, while neutral slots produced zero of thirty six in both exclusion conditions.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f4ee; }
+      .ink { fill: #17202a; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .muted { fill: #55616d; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .cell { stroke: #24313d; stroke-width: 2; rx: 18; }
+      .named { fill: #f6c1aa; }
+      .neutral { fill: #b8dfce; }
+      .header { fill: #26343f; }
+      .rule { stroke: #d5cabc; stroke-width: 2; }
+      .small { font-size: 22px; }
+      .med { font-size: 30px; font-weight: 700; }
+      .big { font-size: 54px; font-weight: 800; }
+      .label { font-size: 24px; font-weight: 700; }
+      .note { font-size: 18px; }
+    </style>
+  </defs>
+  <rect class="bg" width="980" height="620"/>
+  <text x="56" y="66" class="ink big">Closed 2x2 Result</text>
+  <text x="58" y="104" class="muted small">Same 12 domains, three frontier models, temperature 0, false anchors absent.</text>
+  <line x1="56" y1="132" x2="924" y2="132" class="rule"/>
+
+  <text x="286" y="175" text-anchor="middle" class="ink label">No anti-identifier clause</text>
+  <text x="698" y="175" text-anchor="middle" class="ink label">With anti-identifier clause</text>
+  <text x="64" y="285" class="ink label">Named slots</text>
+  <text x="64" y="470" class="ink label">Neutral slots</text>
+
+  <rect x="206" y="205" width="260" height="145" class="cell named"/>
+  <rect x="542" y="205" width="260" height="145" class="cell named"/>
+  <rect x="206" y="390" width="260" height="145" class="cell neutral"/>
+  <rect x="542" y="390" width="260" height="145" class="cell neutral"/>
+
+  <text x="336" y="265" text-anchor="middle" class="ink big">10/36</text>
+  <text x="336" y="306" text-anchor="middle" class="muted note">Wilson 95% [0.158, 0.440]</text>
+  <text x="672" y="265" text-anchor="middle" class="ink big">14/36</text>
+  <text x="672" y="306" text-anchor="middle" class="muted note">Wilson 95% [0.248, 0.551]</text>
+  <text x="336" y="450" text-anchor="middle" class="ink big">0/36</text>
+  <text x="336" y="491" text-anchor="middle" class="muted note">Wilson 95% [0.000, 0.096]</text>
+  <text x="672" y="450" text-anchor="middle" class="ink big">0/36</text>
+  <text x="672" y="491" text-anchor="middle" class="muted note">Wilson 95% [0.000, 0.096]</text>
+
+  <text x="56" y="584" class="muted note">Read as: named field labels kept producing fabricated artifacts; neutral descriptive labels did not on this corpus.</text>
+</svg>

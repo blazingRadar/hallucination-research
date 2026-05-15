@@ -1,0 +1,18 @@
+{
+  "corpus": "runs/hallucination-v6-dose-response-20260504T133149Z/repair_inputs/anthropic_capped_subset.jsonl",
+  "corpus_sha256": "60e024d29a85acc053f8b4b4e631f7a4a85fcc7906345ad563c611b1323c7799",
+  "credential_values_saved": false,
+  "max_tokens": 4000,
+  "providers": [
+    {
+      "base_url_host": "api.anthropic.com",
+      "kind": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v6-dose-response-20260504T133149Z-repair-anthropic-4000",
+  "seed": "prompt_structure_hallucination_v1_20260502",
+  "started_at_utc": "2026-05-04T18:43:36Z"
+}

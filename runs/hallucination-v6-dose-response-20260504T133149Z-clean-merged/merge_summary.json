@@ -1,0 +1,13 @@
+{
+  "added_repaired_error_rows": 6,
+  "anthropic_repair_8000": "hallucination-v6-dose-response-20260504T133149Z-repair-anthropic-8000",
+  "anthropic_repair_residual_12000": "hallucination-v6-dose-response-20260504T133149Z-repair-anthropic-residual-12000",
+  "clean_run_id": "hallucination-v6-dose-response-20260504T133149Z-clean-merged",
+  "merged_rows": 720,
+  "replaced_success_rows": 232,
+  "source_run_id": "hallucination-v6-dose-response-20260504T133149Z",
+  "stable_refusal_rows": [
+    "anthropic:V6A020_N0_R1"
+  ],
+  "xai_repair": "hallucination-v6-dose-response-20260504T133149Z-repair-xai-timeouts"
+}

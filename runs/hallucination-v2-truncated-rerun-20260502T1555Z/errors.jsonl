@@ -1,0 +1,1 @@
+{"error": "timed out", "error_type": "TimeoutError", "model": "qwen/qwen3.5-35b-a3b", "prompt_id": "HT007", "provider": "local_qwen", "run_id": "hallucination-v2-truncated-rerun-20260502T1555Z", "source_response_hash": "58ec222bb89c5fd152aab4c1f44a4984851537120b896f99464252ef2c294ad6", "timestamp_utc": "2026-05-02T15:54:18Z"}

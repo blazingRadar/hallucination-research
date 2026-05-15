@@ -1,0 +1,122 @@
+[
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HF017",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "e0a8d4fdfc55ac40b53ca95cd963728eb1d2d04cbc9a50c4418788663b795e0d"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HF002",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "824986433c02df5aef3f10f7d7bc2e0dbf7d4531499f5a1c8afc04a685cb3b7c"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HF019",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "723529a41e4ab6fe71b173cabf432266e0f1afe2f1d7a7aca430cbe403a22b2d"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO007",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "8bc741d11f89dfd6024712d1f095861b090aabdb85abd2d0f8ae8b4a69287b88"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO002",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "17279df819cc3ef20377001d515345f3ed8e51ab019ceee549adf94c36a8d749"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO006",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "17cc662838f99c7f363d9ce2e59f9f895d6084a0f99e21cf471e38cd7a7dda34"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HF003",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "1852f7a23a77df9e0172e08865369ddef6a22ec6773307cf098bc9dc6114dfec"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO005",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "860be9a60f65f90d3fa74d043d3192fbf4e31f66a5daeb73eb53f0f78d5db103"
+  },
+  {
+    "condition": "true_premise_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HT003",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "85b3e2ecfb030525cbfdedd8def6500d9f7db17c5a508ff89b53821621391ad4"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HF015",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "d68a8888417538c70efaf6fdfb2ea750c7d08321375c5ed15665c16a0b1a5066"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO010",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "0fb6677de7dda8fe5d6b7bfa7b19c4d6ec421f41d4245c0d5b2202a6be80e4d2"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO009",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "c06386dfd2360147116fe5411281ca1d874169dabfc847fbf4336f2aecd3ad7a"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO008",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "8863c2182db8e87d2ae3b972c80e04ce6c6b00156846c5475d5f8e81bc98ed36"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO003",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "cb7a7a74f2ed0eec87cee7e3551f43fd168c180b24dde4ce6e9895f43b6544fc"
+  },
+  {
+    "condition": "open_structure_control",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "HO004",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "b62dccae4c3e12888e37784f9965d1df75d9a30d07e383416aa9ce17e29aa972"
+  }
+]

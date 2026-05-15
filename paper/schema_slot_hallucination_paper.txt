@@ -1,0 +1,345 @@
+Title
+
+When the Schema is the Prompt: A Small Result on Field-Label-Induced Hallucination
+
+Subtitle
+
+In a 12-anchor paired ablation across three frontier models, named output-schema
+slots produced fabrications even when the prompt explicitly excluded identifiers
+and citations. Neutral descriptive slots stayed at zero in both exclusion
+conditions. A larger V6 stress test then found an ordered dose signal
+concentrated in OpenAI outputs, while narrowly missing the preregistered pooled
+effect-size threshold.
+
+Draft
+
+Schema field names are prompt text.
+
+That is the shortest version of this result. In a small paired ablation across
+`gpt-5-chat-latest`, `claude-sonnet-4-6`, and `grok-4.3`, output schemas that
+asked for named artifacts produced hallucination-positive responses in 10/36
+responses without explicit anti-identifier exclusions and 14/36 responses with
+those exclusions. Neutral descriptive schemas produced 0/36 in both conditions.
+
+The extra clause did not suppress the effect. I do not read the movement from
+10/36 to 14/36 as evidence that exclusions made the problem worse; the Wilson
+intervals overlap heavily. The calibrated reading is narrower and stronger
+enough: on this corpus, adding natural-language exclusions did not fix the
+named-slot failure mode.
+
+The fields that caused trouble looked like normal structured-output fields:
+
+- `study_name`
+- `rule_identifier`
+- `benchmark_name`
+- `advisory_id`
+- `framework_name`
+- `document_name`
+
+The neutral fields looked like:
+
+- `pattern`
+- `mechanism`
+- `evidence_strength`
+- `limitation`
+- `uncertainty`
+
+The prompt body did not contain the fabricated entity. There was no `type:
+explain` operator. The domain was real. The output schema was the part applying
+pressure.
+
+This is not a general solution to hallucination. It is not a production
+benchmark. It is not enough for a paper. It is a narrow result about one
+failure mode in structured prompts and tool-like output schemas.
+
+But I think it matters because structured outputs are becoming the default way
+models connect to software.
+
+V6 extends the result but also narrows it. On a fresh 24-anchor corpus with 0,
+1, 2, 4, or 8 named-artifact schema slots, the pooled dual-judge positive rates
+were ordered: 0/144, 0/144, 0/144, 4/144, and 20/144. The trend survived
+prompt-length adjustment, but the preregistered 8-slot minus 0-slot effect-size
+bar was narrowly missed: observed 0.139 against a required 0.15. The effect was
+provider-conditional: OpenAI carried the trend, while Claude produced no
+positives and xAI produced one dose-4 positive and no dose-8 positives.
+
+## The result
+
+The current closed 2x2 is:
+
+| Schema slot type | Explicit anti-identifier exclusion? | Hallucination-positive |
+|---|---:|---:|
+| Named entity slots | No | 10/36 |
+| Named entity slots | Yes | 14/36 |
+| Neutral descriptive slots | Yes | 0/36 |
+| Neutral descriptive slots | No | 0/36 |
+
+The Wilson 95% intervals are:
+
+- Named slots without exclusions: 10/36, Wilson 95% [0.158, 0.440]
+- Named slots with exclusions: 14/36, Wilson 95% [0.248, 0.551]
+- Neutral slots with exclusions: 0/36, Wilson 95% [0.000, 0.096]
+- Neutral slots without exclusions: 0/36, Wilson 95% [0.000, 0.096]
+
+All runs used the same three providers, temperature 0, the same 12 anchor
+domains, and prompts where the false anchor and `type:` operator were absent.
+
+The V5C follow-up was the important counterargument test. Before V5C, the
+obvious skeptical reply was: maybe neutral slots only looked safe because they
+included an explicit instruction not to output identifiers or citations. V5B
+addressed that on the neutral side. V5C addressed it on the named side.
+
+The result was not "exclusions solve the problem." Named slots still produced
+14/36 AND-agreement positives with explicit exclusions.
+
+V5C also made the old prompt-length objection less threatening. The two
+closest prompt-length cells were V5C named-with-exclude at about 272 characters
+on average and V5 neutral-with-exclude at about 279 characters. Those two cells
+produced 14/36 and 0/36 respectively. That is not a fully length-matched
+experiment, but it makes prompt length unlikely to be the load-bearing variable
+on this corpus.
+
+V6 tested a larger dose-response version of the same concern. The fresh V6
+corpus used five named-slot doses:
+
+| Named slots | Positive | N | Rate | Wilson 95% CI |
+|---:|---:|---:|---:|---:|
+| 0 | 0 | 144 | 0.000 | [0.000, 0.026] |
+| 1 | 0 | 144 | 0.000 | [0.000, 0.026] |
+| 2 | 0 | 144 | 0.000 | [0.000, 0.026] |
+| 4 | 4 | 144 | 0.028 | [0.011, 0.069] |
+| 8 | 20 | 144 | 0.139 | [0.092, 0.205] |
+
+The named-slot coefficient stayed positive in the length-covariate logistic
+model (p=1.9e-06), while prompt length itself was not a significant predictor
+(p=0.326). The important boundary is that V6 did not meet its preregistered
+binary success threshold: the planned 8-slot minus 0-slot difference was >=
+0.15, and the observed difference was 0.139.
+
+## What counted as a positive
+
+The primary label was dual-judge AND-agreement hallucination-positive. OpenAI
+and Anthropic judges both had to mark the row positive.
+
+Positive labels were:
+
+- `accepted_false_premise`
+- `fabricated_specifics`
+- `fabricated_citation`
+
+Misrecalling a real entity was not counted as hallucination-positive. Ambiguous
+cases were not positive under the primary rule.
+
+Examples from the V5C positive log show the shape of the failure. A prompt with
+`study_name` elicited fake study-like rows. A prompt with `benchmark_name`
+elicited benchmark-like names. A prompt with `advisory_id` elicited advisory-like
+identifiers. In several cases the model tried to satisfy the exclusion by using
+generic placeholders or sanitized labels, but still filled the named artifact
+slot with a concrete-looking entity.
+
+That is the thing I want to point at: the schema did not merely format the
+answer. It helped define what kind of object the model thought it was supposed
+to produce.
+
+## Distribution
+
+The V5C positives were not all from one model:
+
+- OpenAI: 6/12
+- Anthropic: 5/12
+- xAI: 3/12
+
+They were not all from one anchor either. The 14 positives appeared across 7 of
+the 12 anchors:
+
+- VG005: 3
+- VG011: 3
+- VG008: 2
+- VG009: 2
+- VG010: 2
+- VG001: 1
+- VG012: 1
+
+That does not prove broad generality. It does make the result less likely to be
+a single-provider or single-anchor accident.
+
+Judge disagreement was non-trivial in V5C: 11/36 rows had either primary-label
+or positive-label disagreement. The AND-agreement rule is conservative for the
+headline count, but the disagreement rate is still important. The later audits
+kept the conservative AND-agreement framing rather than treating single-judge
+positives as the headline result.
+
+V6 changed the distribution story. The dose signal was not cross-provider in
+the strong sense. It was concentrated in `gpt-5-chat-latest`: OpenAI produced
+0/48, 0/48, 0/48, 3/48, and 20/48 positives across doses 0, 1, 2, 4, and 8.
+Claude produced zero positives at every dose. xAI produced one dose-4 positive
+and zero dose-8 positives. That makes V6 an OpenAI-specific schema-slot
+pressure result, not a clean three-provider replication.
+
+## How I got here
+
+This started from a simpler observation. If a prompt asserts a false entity and
+asks a model to explain it, models often complete the pattern instead of
+checking whether the entity exists.
+
+That first observation was not publishable as a novel result. Verification-first
+prompting already has a literature, and my first formal experiment was too
+close to a small Chain-of-Verification replication. I closed that version rather
+than ship a result that did not deserve the framing.
+
+Then the open-structure control failed.
+
+I removed the fabricated entity from the prompt. I removed the forced `type:
+explain` operator. I expected hallucination to fall to the floor. It did not.
+The prompts were "clean" in the obvious sense, but the output schema still had
+fields like `study_name`, `rule_identifier`, `benchmark_name`, and
+`advisory_id`.
+
+The models filled those slots.
+
+That failure was more useful than the original expected success. It suggested a
+third pressure source: not just false premise in the prompt body, not just task
+operator, but the lexical semantics of the output schema itself.
+
+The later experiments narrowed that:
+
+- V4 exposed the schema leak.
+- V4B replaced named slots with descriptive slots and got 0/36, but it changed
+  too many things at once.
+- V5 ran named slots and neutral slots in a paired single run: 10/36 vs 0/36.
+- V5B removed explicit anti-identifier exclusions from the neutral arm: still
+  0/36.
+- V5C ran the missing named-with-exclude cell: 14/36.
+- V6 ran a fresh-corpus dose-response stress test: pooled rates increased
+  0/144, 0/144, 0/144, 4/144, 20/144 across 0, 1, 2, 4, and 8 named slots, but
+  the preregistered pooled effect-size threshold was narrowly missed and the
+  result was concentrated in OpenAI outputs.
+
+That is the current evidence chain.
+
+## What I think is happening
+
+My current hypothesis is schema-slot pressure.
+
+A field named `study_name` does not merely say "format the answer in this
+column." It says "there is a study-shaped thing to retrieve or produce." If the
+domain is real but recall is weak, the model may satisfy the shape with a
+plausible object.
+
+A field named `pattern` or `mechanism` asks for a different kind of answer. It
+does not require a named artifact. The model can answer from general knowledge
+without inventing a specific study, advisory, benchmark, statute, or rule ID.
+
+This distinction matters for structured-output APIs. We often treat field names
+as inert developer labels. They are not inert. They are part of the prompt.
+
+## What this does not show
+
+This result has real limits.
+
+First, this is one 12-anchor synthetic corpus. It should not be treated as a
+general benchmark.
+
+Second, prompt length is not fully controlled. V5C weakens the length-confound
+story because the named-with-exclude and neutral-with-exclude cells were close
+in character length while splitting 14/36 vs 0/36, but a future version should
+still use deliberately length-matched variants.
+
+Third, V6 has now tested a dose-response curve on a fresh 24-anchor corpus. The
+pooled rate increased monotonically, and the trend survived length-as-covariate
+adjustment. The claim remains narrow because the preregistered pooled
+effect-size threshold was missed and the result was provider-conditional.
+
+Fourth, this is not production tool-schema evidence. The prompts are structured
+queries, not live function-calling schemas inside production agent loops.
+
+Fifth, neutral schemas do not eliminate all possible errors. One V5B
+disagreement surfaced unsupported quantitative claims in a neutral response.
+The present claim is about named artifact fabrication under this scoring rule,
+not about all factual error.
+
+Sixth, V5C was a follow-up run, not part of the original V5 batch. It used the
+same models, providers, corpus family, temperature setting, and scoring rule,
+but it is still a follow-up cell.
+
+Seventh, V6 does not isolate slot count from field-vocabulary semantics. Higher
+named-slot doses introduced additional labels such as `citation_label`,
+`identifier_code`, `program_name`, `standard_name`, `dataset_name`, and
+`document_name`. That means V6 tests increasing named-artifact schema pressure,
+not pure slot count in isolation.
+
+Eighth, V6 should not be pooled with V5/V5B/V5C as if they used the same
+vocabulary. V6 used a generic dose vocabulary, while the V5 family used
+per-anchor named slots.
+
+## Related work and positioning
+
+Verification-first prompting and Chain-of-Verification style methods are the
+closest prior family, which is why I closed the V3 verification-gate result
+rather than publish it as novel. TruthfulQA and hallucination benchmarks measure
+model truthfulness under question framing, but they do not isolate output field
+label semantics in this way.
+
+The V6 framing is also consistent with two newer pieces of context. Kalai et
+al. 2025, "Why Language Models Hallucinate," characterizes OpenAI-class
+training as rewarding guessing under some evaluation regimes. An
+Anthropic-OpenAI joint pilot evaluation reported high Claude refusal behavior on
+hallucination evaluations. I cite these as positioning, not as proof of my
+result: V6 is a controlled measurement of a schema-slot pressure condition where
+that provider asymmetry appears sharply.
+
+Phare V2 is also relevant because it studies structured tool-call failure
+modes. My V6 setup is complementary: it tests parameter or field addition
+pressure rather than omission alone.
+
+## Why I am still publishing this
+
+I am publishing this because the failure mode is concrete and because the audit
+trail made the claim narrower rather than larger.
+
+The lab repeatedly caught itself overclaiming:
+
+- V3 was closed as a CoVe-like replication.
+- V4 failed and exposed schema leakage.
+- V4B overclaimed a joint-removal result.
+- V5 paired the ablation.
+- V5B closed the neutral exclusion-clause confound.
+- V5C closed the named-with-exclude cell.
+- V6 added a larger dose-response stress test and forced the claim to become
+  provider-conditional.
+
+The result is now smaller than the original story, but more useful.
+
+I do not think the takeaway is "use my magic prompt." I think the takeaway is:
+if your schema asks for named artifacts in domains where the model may not know
+the answer, you may be creating a fabrication request.
+
+The practical implication is simple. Schema and prompt linters should flag
+fields like:
+
+- `study_name`
+- `citation`
+- `rule_id`
+- `benchmark_name`
+- `advisory_id`
+- `statute_name`
+
+They should suggest descriptive alternatives unless retrieval or validation is
+available downstream.
+
+## Next experiment
+
+V6 is complete. The next version should be boring and cleaner, but only if
+future technical work justifies extending this bounded artifact:
+
+- fresh corpus
+- length-matched prompts
+- larger high-dose sample
+- dose 12 and dose 16
+- isolation of field vocabulary from slot count
+- production-style tool/function schemas
+- human adjudication of judge disagreements
+
+Until then, the current result is bounded evidence for one specific point:
+
+Schema field names are prompt text. Treat them like prompt text.

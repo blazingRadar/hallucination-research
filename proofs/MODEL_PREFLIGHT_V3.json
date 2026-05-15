@@ -1,0 +1,20 @@
+{
+  "created_at_utc": "2026-05-02T17:34:15Z",
+  "credential_values_saved": false,
+  "credentials": [
+    {
+      "length": 164,
+      "name": "openai",
+      "present": true,
+      "source": "external environment file"
+    },
+    {
+      "length": 108,
+      "name": "anthropic",
+      "present": true,
+      "source": "external environment file"
+    }
+  ],
+  "overall_ready": true,
+  "scope": "V3 uses OpenAI and Anthropic only; xAI and local Qwen intentionally excluded."
+}

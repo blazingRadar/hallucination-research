@@ -1,0 +1,7 @@
+This analysis output is invalidated by proofs/DEVIATION_LOG_V6.md D9.
+
+Reason: the analysis script keyed rows only by response_hash, collapsing
+identical empty Anthropic refusal rows and lowering per-dose denominators below
+the expected 144.
+
+Use the regenerated post-D9 analysis output instead.

@@ -1,0 +1,38 @@
+[
+  {
+    "condition": "named_entity_schema",
+    "prompt_id": "VG001_S",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "d7f08a2123c2d1beef60e835934a74768e8eb5e43ca0b171216aa0c4cc1f040d",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "7e31ebb560f20a7e3993c6ea10fd1ca2f3900ef0947d37a97cfe8cdd7d74f8b9"
+  },
+  {
+    "condition": "neutral_descriptive_schema",
+    "prompt_id": "VG001_D",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "8531e8b12b65f2d56153914ea1c606dae6ffa7d0446be6e2090fd3d5fe8f0eb7",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "b484eccae52ad7451e9e2f0ddcdbfd348873ae970bdf551dd9651e8dcb9ac75c"
+  },
+  {
+    "condition": "named_entity_schema",
+    "prompt_id": "VG004_S",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "15cdb9cc62d53d978a16118dbabd4b247698f50151e8e529c4d337c9a99724d1",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "ef93d002ada34da0bb9e494d30fe20f0fa455f8f4353627c3acf3a8645012e99"
+  },
+  {
+    "condition": "named_entity_schema",
+    "prompt_id": "VG011_S",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "2f250498a62bcc1acb134f5ed14648f110e54b77ef2cc44d2828fe6d3582757e",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "7eb5097887635fcd6e52739bb05e75ca7d596cba95a7c4f9d24d56e0c186956e"
+  }
+]

@@ -1,0 +1,813 @@
+{
+  "api_primary": {
+    "condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 60,
+        "positive": 14,
+        "rate": 0.23333333333333334
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 30,
+        "positive": 5,
+        "rate": 0.16666666666666666
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "condition_rates_excluding_ambiguous": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 60,
+        "positive": 14,
+        "rate": 0.23333333333333334
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 30,
+        "positive": 5,
+        "rate": 0.16666666666666666
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "new_anchor_condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 54,
+        "positive": 12,
+        "rate": 0.2222222222222222
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 24,
+        "positive": 5,
+        "rate": 0.20833333333333334
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 30,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "new_anchor_thresholds": {
+      "forced_minus_false_anchor_plain": 0.013888888888888867,
+      "forced_minus_open_structure_control": 0.2222222222222222,
+      "forced_minus_true_premise_control": 0.2222222222222222,
+      "mode_accelerant_threshold_met": false,
+      "primary_threshold_met": false
+    },
+    "provider_condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 20,
+        "positive": 0,
+        "provider": "anthropic",
+        "rate": 0.0
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 10,
+        "positive": 0,
+        "provider": "anthropic",
+        "rate": 0.0
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "anthropic",
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "anthropic",
+        "rate": 0.0
+      },
+      {
+        "condition": "false_anchor_forced",
+        "n": 20,
+        "positive": 12,
+        "provider": "openai",
+        "rate": 0.6
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 10,
+        "positive": 3,
+        "provider": "openai",
+        "rate": 0.3
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "openai",
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "openai",
+        "rate": 0.0
+      },
+      {
+        "condition": "false_anchor_forced",
+        "n": 20,
+        "positive": 2,
+        "provider": "xai",
+        "rate": 0.1
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 10,
+        "positive": 2,
+        "provider": "xai",
+        "rate": 0.2
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "xai",
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 10,
+        "positive": 0,
+        "provider": "xai",
+        "rate": 0.0
+      }
+    ],
+    "provider_rates": [
+      {
+        "n": 50,
+        "positive": 0,
+        "provider": "anthropic",
+        "rate": 0.0
+      },
+      {
+        "n": 50,
+        "positive": 15,
+        "provider": "openai",
+        "rate": 0.3
+      },
+      {
+        "n": 50,
+        "positive": 4,
+        "provider": "xai",
+        "rate": 0.08
+      }
+    ],
+    "thresholds": {
+      "forced_minus_false_anchor_plain": 0.06666666666666668,
+      "forced_minus_open_structure_control": 0.23333333333333334,
+      "forced_minus_true_premise_control": 0.23333333333333334,
+      "mode_accelerant_threshold_met": false,
+      "primary_threshold_met": false
+    }
+  },
+  "boundary": "API providers are primary; Qwen is degraded/sensitivity evidence because 35/50 Qwen rows remain capped.",
+  "counts": {
+    "api": 150,
+    "qwen": 50,
+    "qwen_capped": 35,
+    "qwen_uncapped": 15,
+    "total": 200
+  },
+  "domain_rates_api": [
+    {
+      "domain": "ai_policy",
+      "n": 12,
+      "positive": 1,
+      "rate": 0.08333333333333333
+    },
+    {
+      "domain": "biology",
+      "n": 6,
+      "positive": 2,
+      "rate": 0.3333333333333333
+    },
+    {
+      "domain": "browser_security",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "climate_policy",
+      "n": 9,
+      "positive": 1,
+      "rate": 0.1111111111111111
+    },
+    {
+      "domain": "cybersecurity",
+      "n": 12,
+      "positive": 1,
+      "rate": 0.08333333333333333
+    },
+    {
+      "domain": "economics",
+      "n": 6,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "education_policy",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "finance",
+      "n": 9,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "history",
+      "n": 12,
+      "positive": 4,
+      "rate": 0.3333333333333333
+    },
+    {
+      "domain": "international_relations",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "law",
+      "n": 12,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "machine_learning",
+      "n": 9,
+      "positive": 2,
+      "rate": 0.2222222222222222
+    },
+    {
+      "domain": "materials_science",
+      "n": 3,
+      "positive": 1,
+      "rate": 0.3333333333333333
+    },
+    {
+      "domain": "medicine",
+      "n": 12,
+      "positive": 2,
+      "rate": 0.16666666666666666
+    },
+    {
+      "domain": "neuroscience",
+      "n": 12,
+      "positive": 1,
+      "rate": 0.08333333333333333
+    },
+    {
+      "domain": "product_security",
+      "n": 3,
+      "positive": 1,
+      "rate": 0.3333333333333333
+    },
+    {
+      "domain": "psychology",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "public_health",
+      "n": 3,
+      "positive": 1,
+      "rate": 0.3333333333333333
+    },
+    {
+      "domain": "sociology",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    },
+    {
+      "domain": "software_engineering",
+      "n": 12,
+      "positive": 2,
+      "rate": 0.16666666666666666
+    },
+    {
+      "domain": "space_science",
+      "n": 3,
+      "positive": 0,
+      "rate": 0.0
+    }
+  ],
+  "label_counts": {
+    "accepted_false_premise": 8,
+    "accurate_answer": 80,
+    "ambiguous": 1,
+    "corrected_with_real_entity_match": 25,
+    "fabricated_specifics": 12,
+    "partial_correction": 10,
+    "verified_false_or_refused": 64
+  },
+  "linguistic_api": {
+    "structural_patterns": {
+      "according to the": {
+        "negative": 0,
+        "positive": 0
+      },
+      "certainty_score": {
+        "negative": 0,
+        "positive": 0
+      },
+      "confidence": {
+        "negative": 10,
+        "positive": 3
+      },
+      "supporting evidence": {
+        "negative": 2,
+        "positive": 1
+      },
+      "the directive": {
+        "negative": 1,
+        "positive": 1
+      },
+      "the finding": {
+        "negative": 0,
+        "positive": 2
+      },
+      "the memorandum": {
+        "negative": 0,
+        "positive": 4
+      },
+      "the report": {
+        "negative": 2,
+        "positive": 1
+      },
+      "the study": {
+        "negative": 3,
+        "positive": 5
+      },
+      "the trial": {
+        "negative": 4,
+        "positive": 1
+      }
+    },
+    "top_positive_tokens": [
+      {
+        "negative_docs": 0,
+        "positive_docs": 4,
+        "ratio": 31.666666666666668,
+        "token": "andrew"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 3,
+        "ratio": 25.333333333333332,
+        "token": "executive-led"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 3,
+        "ratio": 25.333333333333332,
+        "token": "feasibility"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 3,
+        "ratio": 25.333333333333332,
+        "token": "suggested"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "amid"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "behaviors"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "cas14b"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "centralization"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "cleave"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "compact"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "complement"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "copies"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "detectable"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "diversity"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "drafted"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "emphasis"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "encourages"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "engineered"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "eventual"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "exposed"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "fatigue"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "fit"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "freedmen"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "fused"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "highlighting"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "immunogenicity"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "implicit"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "ironclad"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "leniency"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "lines"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "localization"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "lyra"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "moderates"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "north"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "nuclear"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "pain"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "part"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "postwar"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "ratifying"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "recognize"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "site-specific"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "strengthen"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 2,
+        "ratio": 19.0,
+        "token": "transfection"
+      },
+      {
+        "negative_docs": 1,
+        "positive_docs": 4,
+        "ratio": 15.833333333333334,
+        "token": "johnson"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "abnormalities"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "abolishing"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "accepting"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "accesses"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "adaptability"
+      },
+      {
+        "negative_docs": 0,
+        "positive_docs": 1,
+        "ratio": 12.666666666666666,
+        "token": "administrators"
+      }
+    ]
+  },
+  "rubric_sha256": "e32610bb5c520c01ccdfe2616b61b5cfc2f3b7837aababaa0f2f5b5e6018169a",
+  "score_root": "scored/hallucination-v2-clean-merged-scoring-20260502T1705Z",
+  "score_sha256": "53ec865820319886194c595e6feea0e4c3b0ae64ebd86c86099753c87555ee25",
+  "sensitivity": {
+    "all_providers_condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 80,
+        "positive": 15,
+        "rate": 0.1875
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 40,
+        "positive": 5,
+        "rate": 0.125
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 40,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 40,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "all_providers_thresholds": {
+      "forced_minus_false_anchor_plain": 0.0625,
+      "forced_minus_open_structure_control": 0.1875,
+      "forced_minus_true_premise_control": 0.1875,
+      "mode_accelerant_threshold_met": false,
+      "primary_threshold_met": false
+    },
+    "all_uncapped_condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 60,
+        "positive": 14,
+        "rate": 0.23333333333333334
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 30,
+        "positive": 5,
+        "rate": 0.16666666666666666
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 39,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 36,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "all_uncapped_thresholds": {
+      "forced_minus_false_anchor_plain": 0.06666666666666668,
+      "forced_minus_open_structure_control": 0.23333333333333334,
+      "forced_minus_true_premise_control": 0.23333333333333334,
+      "mode_accelerant_threshold_met": false,
+      "primary_threshold_met": false
+    },
+    "qwen_condition_rates": [
+      {
+        "condition": "false_anchor_forced",
+        "n": 20,
+        "positive": 1,
+        "rate": 0.05
+      },
+      {
+        "condition": "false_anchor_plain",
+        "n": 10,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "open_structure_control",
+        "n": 10,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 10,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ],
+    "qwen_thresholds": {
+      "forced_minus_false_anchor_plain": 0.05,
+      "forced_minus_open_structure_control": 0.05,
+      "forced_minus_true_premise_control": 0.05,
+      "mode_accelerant_threshold_met": false,
+      "primary_threshold_met": false
+    },
+    "qwen_uncapped_condition_rates": [
+      {
+        "condition": "open_structure_control",
+        "n": 9,
+        "positive": 0,
+        "rate": 0.0
+      },
+      {
+        "condition": "true_premise_control",
+        "n": 6,
+        "positive": 0,
+        "rate": 0.0
+      }
+    ]
+  },
+  "source_raw_sha256": "af7e46f6c10ca263252135eb445850fbad82d4486a39ded4772786caf13a3e28",
+  "source_run": "runs/hallucination-v2-clean-merged-20260502T1648Z"
+}

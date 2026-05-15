@@ -1,0 +1,36 @@
+{
+  "created_at_utc": "2026-05-02T16:40:22Z",
+  "credential_values_saved": false,
+  "deviation_log_entry": "D1",
+  "errors_count": 0,
+  "finish_reasons_by_provider": {
+    "anthropic": {
+      "end_turn": 50
+    },
+    "local_qwen": {
+      "length": 35,
+      "stop": 15
+    },
+    "openai": {
+      "stop": 50
+    },
+    "xai": {
+      "stop": 50
+    }
+  },
+  "replacement_count": 67,
+  "rerun_raw_sha256s": {
+    "runs/hallucination-v2-claude-rerun-20260502T1638Z": "aac4a59084eb1a4f774bb433763d0445feb628c7ed5a2e315faa942fd6d57d07",
+    "runs/hallucination-v2-qwen-rerun-20260502T1625Z": "2f19438a6a72edee3a9a8a8a0a4008afcae0e8203b093557fe61995f5d5c441a",
+    "runs/hallucination-v2-truncated-rerun-20260502T1605Z": "575dd4faee6d25f96a59b989ff5307a56ee46ce8be2645b5c2c88d1b54ebc69b"
+  },
+  "rerun_runs": [
+    "runs/hallucination-v2-truncated-rerun-20260502T1605Z",
+    "runs/hallucination-v2-claude-rerun-20260502T1638Z",
+    "runs/hallucination-v2-qwen-rerun-20260502T1625Z"
+  ],
+  "row_count": 200,
+  "run_id": "hallucination-v2-clean-merged-20260502T1648Z",
+  "source_raw_sha256": "78b8c653fdc907a597529ece1fbcd2fdb74ddda3068399811bacd873b10528aa",
+  "source_run": "runs/hallucination-v2-full-20260502T145359Z"
+}

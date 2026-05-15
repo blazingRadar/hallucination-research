@@ -1,0 +1,13 @@
+{
+  "credential_values_saved": false,
+  "deviation_log_entry": "D1",
+  "local_timeout_seconds": 600,
+  "max_tokens": 6000,
+  "providers_filter": "anthropic",
+  "rerun_rule": "finish_reason in ['length', 'max_tokens']",
+  "run_id": "hallucination-v5-truncation-rerun-20260503T072229Z",
+  "source_raw_sha256": "732dc84a9ff9c00686a828deb81d3b1063568071d7efe354cc7c7a575c575af8",
+  "source_run": "runs/hallucination-v5-schema-slot-20260503T065139Z",
+  "started_at_utc": "2026-05-03T07:22:29Z",
+  "target_count": 4
+}

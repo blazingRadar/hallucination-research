@@ -1,0 +1,32 @@
+{
+  "corpus": "corpus/PROMPT_CORPUS_V6_DOSE_RESPONSE.jsonl",
+  "corpus_sha256": "5c1a41c892101043aecd933b7001cffe5a4f3478c25a22df88159ad6582cd116",
+  "credential_values_saved": false,
+  "max_tokens": 1800,
+  "providers": [
+    {
+      "base_url_host": "api.openai.com",
+      "kind": "openai_compatible",
+      "model": "gpt-5-chat-latest",
+      "provider": "openai",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.anthropic.com",
+      "kind": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.x.ai",
+      "kind": "openai_compatible",
+      "model": "grok-4.3",
+      "provider": "xai",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v6-dose-response-20260504T133149Z",
+  "seed": "prompt_structure_hallucination_v1_20260502",
+  "started_at_utc": "2026-05-04T13:31:49Z"
+}

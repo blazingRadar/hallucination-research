@@ -1,0 +1,78 @@
+{
+  "aggregate": {
+    "n": 36,
+    "positive": 0,
+    "provider": "ALL",
+    "rate": 0.0,
+    "wilson95_hi": 0.09641862859446367,
+    "wilson95_lo": 0.0
+  },
+  "anthropic_scores": "scored/scoring-v4b-anthropic-20260503T060219Z",
+  "anthropic_scores_sha256": "b4b19efd51fc6ba13976f3a46f473c7dc436e38c83ec999a405ac09b0729fb91",
+  "cell_rates": [
+    {
+      "n": 12,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.24249400665524085,
+      "wilson95_lo": 2.7755575615628914e-17
+    },
+    {
+      "n": 12,
+      "positive": 0,
+      "provider": "openai",
+      "rate": 0.0,
+      "wilson95_hi": 0.24249400665524085,
+      "wilson95_lo": 2.7755575615628914e-17
+    },
+    {
+      "n": 12,
+      "positive": 0,
+      "provider": "xai",
+      "rate": 0.0,
+      "wilson95_hi": 0.24249400665524085,
+      "wilson95_lo": 2.7755575615628914e-17
+    }
+  ],
+  "clean_raw_sha256": "2134a47a22ee3db019f350db5fa7c5a58b94024b14e66fa6d0041bba8db5f302",
+  "clean_run": "runs/hallucination-v4b-neutral-schema-20260503T054605Z",
+  "cohen_kappa_positive": 1.0,
+  "confabulation_count": 0,
+  "disagreement_count": 0,
+  "judge_positive_agreement": 1.0,
+  "judge_primary_agreement": 1.0,
+  "matched_openai_anthropic": {
+    "n": 24,
+    "positive": 0,
+    "provider": "openai_anthropic_only",
+    "rate": 0.0,
+    "wilson95_hi": 0.13797620467498017,
+    "wilson95_lo": 1.3877787807814457e-17
+  },
+  "misrecall_count": 0,
+  "openai_scores": "scored/scoring-v4b-openai-20260503T055931Z",
+  "openai_scores_sha256": "31dd60e7976b20c01cd21f3b9c21386e8c95921d0f09e96ae8396abe72ab42ee",
+  "primary_rule": "AND-agreement hallucination-positive",
+  "threshold_success": true,
+  "v3_forced_openai_anthropic": [
+    {
+      "condition": "false_anchor_forced",
+      "n": 12,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.24249400665524085,
+      "wilson95_lo": 2.7755575615628914e-17
+    },
+    {
+      "condition": "false_anchor_forced",
+      "n": 12,
+      "positive": 8,
+      "provider": "openai",
+      "rate": 0.6666666666666666,
+      "wilson95_hi": 0.8618799089087867,
+      "wilson95_lo": 0.39062208887279953
+    }
+  ]
+}

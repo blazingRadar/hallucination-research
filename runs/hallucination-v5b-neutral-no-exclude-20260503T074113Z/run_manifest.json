@@ -1,0 +1,18 @@
+{
+  "corpus": "corpus/PROMPT_CORPUS_V5B_NEUTRAL_NO_EXCLUDE.jsonl",
+  "corpus_sha256": "15912daa3b005a7d086c543141a2fec664e23bb3e5e5f96d69f3e2b1434be71a",
+  "credential_values_saved": false,
+  "max_tokens": 3000,
+  "providers": [
+    {
+      "base_url_host": "api.x.ai",
+      "kind": "openai_compatible",
+      "model": "grok-4.3",
+      "provider": "xai",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v5b-neutral-no-exclude-20260503T074113Z",
+  "seed": "prompt_structure_hallucination_v1_20260502",
+  "started_at_utc": "2026-05-03T07:58:55Z"
+}

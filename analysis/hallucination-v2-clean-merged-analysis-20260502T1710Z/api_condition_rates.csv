@@ -1,0 +1,5 @@
+condition,positive,n,rate
+false_anchor_forced,14,60,0.23333333333333334
+false_anchor_plain,5,30,0.16666666666666666
+open_structure_control,0,30,0.0
+true_premise_control,0,30,0.0

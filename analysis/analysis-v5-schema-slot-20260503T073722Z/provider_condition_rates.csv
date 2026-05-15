@@ -1,0 +1,7 @@
+condition,group,n,positive,provider,rate,wilson95_hi,wilson95_lo
+named_entity_schema,anthropic:named_entity_schema,12,4,anthropic,0.3333333333333333,0.6093779111272004,0.13812009109121315
+neutral_descriptive_schema,anthropic:neutral_descriptive_schema,12,0,anthropic,0.0,0.24249400665524085,2.7755575615628914e-17
+named_entity_schema,openai:named_entity_schema,12,4,openai,0.3333333333333333,0.6093779111272004,0.13812009109121315
+neutral_descriptive_schema,openai:neutral_descriptive_schema,12,0,openai,0.0,0.24249400665524085,2.7755575615628914e-17
+named_entity_schema,xai:named_entity_schema,12,2,xai,0.16666666666666666,0.4480308622529734,0.04696514218385381
+neutral_descriptive_schema,xai:neutral_descriptive_schema,12,0,xai,0.0,0.24249400665524085,2.7755575615628914e-17

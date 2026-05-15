@@ -1,0 +1,42 @@
+[
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG001_NX",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "2cc2115a9c26979efd3246c82ed33194cbbfa76104e6412153d9c28ca34d87a9"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG007_NX",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "b3ee399feaa1ee93494f259ef2b8965746c61d578492de5d149d26559a6a74f0"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG004_NX",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "9384ea51c66378fb0f1d349808ff2d3184d599e3b103c622aaabc1c721224096"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG011_NX",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "e25e91e62224b1183c907f82a9368a8531ee220bdf1deeaf1b6f2452674337e4"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG006_NX",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "8d90c82fa9815de39d9ddf28f2c8af21cf1c63c710d28487e6057a4e9cd8d1fa"
+  }
+]

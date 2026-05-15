@@ -1,0 +1,54 @@
+{
+  "credentials": [
+    {
+      "length": 164,
+      "name": "openai",
+      "present": true,
+      "source": "external environment file"
+    },
+    {
+      "length": 108,
+      "name": "anthropic",
+      "present": true,
+      "source": "external environment file"
+    },
+    {
+      "length": 84,
+      "name": "xai_grok",
+      "present": true,
+      "source": "process_env"
+    }
+  ],
+  "local_endpoints": [
+    {
+      "error": null,
+      "models": [
+        "qwen/qwen3.5-35b-a3b",
+        "qwen3guard-gen-4b",
+        "google/gemma-3-4b",
+        "text-embedding-nomic-embed-text-v1.5"
+      ],
+      "name": "lm_studio_openai_compatible",
+      "qwen_present": true,
+      "reachable": true,
+      "url": "http://127.0.0.1:1234/v1/models"
+    },
+    {
+      "error": null,
+      "models": [
+        "gemma2:2b",
+        "tinyllama:latest"
+      ],
+      "name": "ollama",
+      "qwen_present": false,
+      "reachable": true,
+      "url": "http://127.0.0.1:11434/api/tags"
+    }
+  ],
+  "notes": [
+    "Secret values are intentionally omitted.",
+    "Anthropic is also checked under the legacy key name with spaces found in .openclaw/.env.",
+    "Local Qwen is ready only if an OpenAI-compatible or Ollama endpoint lists a Qwen model."
+  ],
+  "overall_ready": true
+}

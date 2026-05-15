@@ -1,0 +1,13 @@
+{
+  "credential_values_saved": false,
+  "deviation_log_entry": "D1",
+  "local_timeout_seconds": 600,
+  "max_tokens": 6000,
+  "providers_filter": "anthropic",
+  "rerun_rule": "finish_reason in ['length', 'max_tokens']",
+  "run_id": "hallucination-v4-truncated-rerun-20260503T034343Z",
+  "source_raw_sha256": "1b06482dd5015fb1dd94c0ee7181df267f523319c1fae32fe7de354f1e29e82a",
+  "source_run": "runs/hallucination-v4-open-structure-20260503T032640Z",
+  "started_at_utc": "2026-05-03T03:48:03Z",
+  "target_count": 4
+}

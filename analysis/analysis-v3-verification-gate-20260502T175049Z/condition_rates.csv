@@ -1,0 +1,9 @@
+provider,condition,positive,n,rate
+anthropic,false_anchor_forced,0,12,0.0
+anthropic,false_anchor_plain,1,12,0.08333333333333333
+anthropic,false_anchor_verify_gate,0,12,0.0
+anthropic,verified_control,0,6,0.0
+openai,false_anchor_forced,8,12,0.6666666666666666
+openai,false_anchor_plain,5,12,0.4166666666666667
+openai,false_anchor_verify_gate,0,12,0.0
+openai,verified_control,0,6,0.0

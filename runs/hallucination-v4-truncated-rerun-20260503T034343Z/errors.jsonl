@@ -1,0 +1,1 @@
+{"error": "The read operation timed out", "error_type": "TimeoutError", "model": "claude-sonnet-4-6", "prompt_id": "VG004_O", "provider": "anthropic", "run_id": "hallucination-v4-truncated-rerun-20260503T034343Z", "source_response_hash": "4d604905b117f85611035ddc755a276ea7bf2ed151b84f224c5705a6a0e980ba", "timestamp_utc": "2026-05-03T03:44:55Z"}

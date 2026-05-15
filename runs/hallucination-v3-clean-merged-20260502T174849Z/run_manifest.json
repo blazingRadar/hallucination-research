@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-05-02T17:48:49Z",
+  "credential_values_saved": false,
+  "deviation_log_entry": "D1",
+  "errors_count": 0,
+  "finish_reasons_by_provider": {
+    "anthropic": {
+      "end_turn": 42
+    },
+    "openai": {
+      "stop": 42
+    }
+  },
+  "replacement_count": 2,
+  "rerun_raw_sha256s": {
+    "runs/hallucination-v3-truncated-rerun-20260502T174737Z": "85a083a398af2d287b3c6120cdb74e90504c140716c024bbc053a17b24c84766"
+  },
+  "rerun_runs": [
+    "runs/hallucination-v3-truncated-rerun-20260502T174737Z"
+  ],
+  "row_count": 84,
+  "run_id": "hallucination-v3-clean-merged-20260502T174849Z",
+  "source_raw_sha256": "747439455f58f1a1a35c31baf7a19f38db950f2c2eb3385c5af1598faa681452",
+  "source_run": "runs/hallucination-v3-verification-gate-20260502T173643Z"
+}

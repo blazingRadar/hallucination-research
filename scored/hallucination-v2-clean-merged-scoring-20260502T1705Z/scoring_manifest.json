@@ -1,0 +1,12 @@
+{
+  "batch_size": 4,
+  "boundary": "model-assisted adjudication; API providers are primary; Qwen is degraded/sensitivity evidence",
+  "created_at_utc": "2026-05-02T16:57:28Z",
+  "credential_values_saved": false,
+  "judge_model": "gpt-5-chat-latest",
+  "judge_provider": "openai",
+  "scoring_rubric": "scoring/SCORING_RUBRIC_V1.md",
+  "scoring_rubric_sha256": "e32610bb5c520c01ccdfe2616b61b5cfc2f3b7837aababaa0f2f5b5e6018169a",
+  "source_raw_sha256": "af7e46f6c10ca263252135eb445850fbad82d4486a39ded4772786caf13a3e28",
+  "source_run": "runs/hallucination-v2-clean-merged-20260502T1648Z"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "condition": "false_anchor_forced",
+    "prompt_id": "VG011_F",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "6a5ea55cc36c7f55173dc6e89711b9bba1dbe70a4fcd87eb0a712ce412dcd97e",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "f6c927f6490c6840aea4c6016af9a166ff1b42c1d37fc8dfc1d68145104588ef"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "prompt_id": "VG004_F",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "ab1119c4d12518dab865a75bd7cc2333ef8a8df70525f349a1fa88f266146a6d",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "39e337f31245574ed4b991fba4ef3bf0a95e0852129b53e244006ffbc707487b"
+  }
+]

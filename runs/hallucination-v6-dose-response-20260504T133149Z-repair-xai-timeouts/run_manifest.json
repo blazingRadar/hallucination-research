@@ -1,0 +1,18 @@
+{
+  "corpus": "runs/hallucination-v6-dose-response-20260504T133149Z/repair_inputs/xai_timeout_subset.jsonl",
+  "corpus_sha256": "2452e40dfcedb2901e85527b6d2362a7959be8424c717501100113f95797eb81",
+  "credential_values_saved": false,
+  "max_tokens": 1800,
+  "providers": [
+    {
+      "base_url_host": "api.x.ai",
+      "kind": "openai_compatible",
+      "model": "grok-4.3",
+      "provider": "xai",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v6-dose-response-20260504T133149Z-repair-xai-timeouts",
+  "seed": "prompt_structure_hallucination_v1_20260502",
+  "started_at_utc": "2026-05-04T18:43:36Z"
+}

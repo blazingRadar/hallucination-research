@@ -1,0 +1,18 @@
+[
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG011_F",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "f6c927f6490c6840aea4c6016af9a166ff1b42c1d37fc8dfc1d68145104588ef"
+  },
+  {
+    "condition": "false_anchor_forced",
+    "model": "claude-sonnet-4-6",
+    "prompt_id": "VG004_F",
+    "provider": "anthropic",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "39e337f31245574ed4b991fba4ef3bf0a95e0852129b53e244006ffbc707487b"
+  }
+]

@@ -1,0 +1,1 @@
+{"condition": "neutral_descriptive_schema_no_exclude", "error": "The read operation timed out", "error_type": "TimeoutError", "model": "grok-4.3", "prompt_id": "VG010_NX", "provider": "xai", "run_id": "hallucination-v5b-neutral-no-exclude-20260503T074113Z", "timestamp_utc": "2026-05-03T07:54:41Z"}

@@ -1,0 +1,47 @@
+[
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "prompt_id": "VG001_NX",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "020677f71f85dd3798ae24607ea947b43f4e457796da56e951b486df32fe3699",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "2cc2115a9c26979efd3246c82ed33194cbbfa76104e6412153d9c28ca34d87a9"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "prompt_id": "VG007_NX",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "43603fb9fb8e6e2192e036578acca3eeeb07922f665cae6d738f7e4260f5bc01",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "b3ee399feaa1ee93494f259ef2b8965746c61d578492de5d149d26559a6a74f0"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "prompt_id": "VG004_NX",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "e476e5ca96cc4185f7181598efb7c02d4bd4a15d1b84b8d95c71df4ccac2ff7c",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "9384ea51c66378fb0f1d349808ff2d3184d599e3b103c622aaabc1c721224096"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "prompt_id": "VG011_NX",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "15f742ab18c6f22cb0553ec43307e26f6de33bf5b1e3be7b5c721826e97a1eaf",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "e25e91e62224b1183c907f82a9368a8531ee220bdf1deeaf1b6f2452674337e4"
+  },
+  {
+    "condition": "neutral_descriptive_schema_no_exclude",
+    "prompt_id": "VG006_NX",
+    "provider": "anthropic",
+    "replacement_finish_reason": "end_turn",
+    "replacement_response_hash": "a60fc26ee292cd280735caaf9ce6193d4c6aacf0a3b219633bc40197c9e3ae1a",
+    "source_finish_reason": "max_tokens",
+    "source_response_hash": "8d90c82fa9815de39d9ddf28f2c8af21cf1c63c710d28487e6057a4e9cd8d1fa"
+  }
+]

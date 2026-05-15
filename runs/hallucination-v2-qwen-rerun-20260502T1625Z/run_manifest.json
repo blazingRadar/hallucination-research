@@ -1,0 +1,13 @@
+{
+  "credential_values_saved": false,
+  "deviation_log_entry": "D1",
+  "local_timeout_seconds": 300,
+  "max_tokens": 2300,
+  "providers_filter": "local_qwen",
+  "rerun_rule": "finish_reason in ['length', 'max_tokens']",
+  "run_id": "hallucination-v2-qwen-rerun-20260502T1625Z",
+  "source_raw_sha256": "78b8c653fdc907a597529ece1fbcd2fdb74ddda3068399811bacd873b10528aa",
+  "source_run": "runs/hallucination-v2-full-20260502T145359Z",
+  "started_at_utc": "2026-05-02T16:23:46Z",
+  "target_count": 50
+}

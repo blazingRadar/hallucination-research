@@ -1,0 +1,375 @@
+{
+  "anchor_level_dose_rates": [
+    {
+      "group": "anchor_dose_0",
+      "n": 72,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.05065117259645781,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "anchor_dose_1",
+      "n": 72,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.05065117259645781,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "anchor_dose_2",
+      "n": 72,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.05065117259645781,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "anchor_dose_4",
+      "n": 72,
+      "positive": 4,
+      "rate": 0.05555555555555555,
+      "wilson95_hi": 0.13432015965997918,
+      "wilson95_lo": 0.02181421598131665
+    },
+    {
+      "group": "anchor_dose_8",
+      "n": 72,
+      "positive": 12,
+      "rate": 0.16666666666666666,
+      "wilson95_hi": 0.269107069305355,
+      "wilson95_lo": 0.09799371242561683
+    }
+  ],
+  "anthropic_scores": "scored/scoring-v6-anthropic-hallucination-v6-dose-response-20260504T133149Z-clean-merged",
+  "anthropic_scores_sha256": "690d2a41f3bb1c439ab3f21cadf1b5b4eb3b432cb614fa05d99ea9cd27bbf88a",
+  "clean_raw_sha256": "e10de3ec53d1fa4231e9fb93b052ea706cafeca8a43667351d2a036a897b81b2",
+  "clean_run": "runs/hallucination-v6-dose-response-20260504T133149Z-clean-merged",
+  "cochran_armitage": {
+    "p_two_sided": 2.2782226915692253e-14,
+    "z": 7.633862853691146
+  },
+  "disagreement_count": 97,
+  "dose_rates": [
+    {
+      "group": "dose_0",
+      "n": 144,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.025983637143036746,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "dose_1",
+      "n": 144,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.025983637143036746,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "dose_2",
+      "n": 144,
+      "positive": 0,
+      "rate": 0.0,
+      "wilson95_hi": 0.025983637143036746,
+      "wilson95_lo": 0.0
+    },
+    {
+      "group": "dose_4",
+      "n": 144,
+      "positive": 4,
+      "rate": 0.027777777777777776,
+      "wilson95_hi": 0.06924153934534726,
+      "wilson95_lo": 0.01085411795640967
+    },
+    {
+      "group": "dose_8",
+      "n": 144,
+      "positive": 20,
+      "rate": 0.1388888888888889,
+      "wilson95_hi": 0.20480196041450174,
+      "wilson95_lo": 0.09174177752213594
+    }
+  ],
+  "finish_reasons": [
+    {
+      "count": 232,
+      "finish_reason": "end_turn",
+      "provider": "anthropic"
+    },
+    {
+      "count": 8,
+      "finish_reason": "refusal",
+      "provider": "anthropic"
+    },
+    {
+      "count": 240,
+      "finish_reason": "stop",
+      "provider": "openai"
+    },
+    {
+      "count": 240,
+      "finish_reason": "stop",
+      "provider": "xai"
+    }
+  ],
+  "fisher_8_vs_0_two_sided": 9.393741831780904e-07,
+  "fisher_high_4_8_vs_low_0_1_two_sided": 7.232594501577803e-08,
+  "highest_dose_anchor_positive_count": 12,
+  "highest_dose_anchor_positive_fraction": 0.16666666666666666,
+  "human_overrides_applied": "no",
+  "judge_positive_agreement": 0.9194444444444444,
+  "judge_primary_agreement": 0.8652777777777778,
+  "logistic_regression_dose_plus_prompt_length": {
+    "coefficients": [
+      -4.890466995876811,
+      1.6443727700454582,
+      0.2628792562468043
+    ],
+    "n": 720,
+    "named_slot_count_coefficient": 1.6443727700454582,
+    "named_slot_count_p_two_sided": 1.9105514487155942e-06,
+    "p_two_sided": [
+      2.0237639272241066e-18,
+      1.9105514487155942e-06,
+      0.3262700628618639
+    ],
+    "positive": 24,
+    "predictors": [
+      "intercept",
+      "named_slot_count_standardized",
+      "prompt_length_standardized"
+    ],
+    "prompt_length_coefficient": 0.2628792562468043,
+    "prompt_length_p_two_sided": 0.3262700628618639,
+    "standard_errors": [
+      0.5585301783679254,
+      0.34526333491963024,
+      0.26779202102045285
+    ],
+    "standardization": {
+      "named_slot_count_mean": 3.0,
+      "named_slot_count_stdev": 2.8284271247461903,
+      "prompt_length_mean": 366.625,
+      "prompt_length_stdev": 8.630433071404934
+    },
+    "status": "converged",
+    "z_scores": [
+      -8.755958380202818,
+      4.762662593258656,
+      0.9816545513382815
+    ]
+  },
+  "misrecall_count": 0,
+  "openai_scores": "scored/scoring-v6-openai-hallucination-v6-dose-response-20260504T133149Z-clean-merged",
+  "openai_scores_sha256": "df529f776aa1a82fce788f7493e90dbda41a2a0c912520d51605a984031b995a",
+  "positive_count": 24,
+  "primary_rule": "AND-agreement hallucination-positive",
+  "prompt_lengths_by_dose": [
+    {
+      "max": 371,
+      "mean": 358.625,
+      "min": 343,
+      "n": 144,
+      "named_slot_count": 0
+    },
+    {
+      "max": 377,
+      "mean": 364.625,
+      "min": 349,
+      "n": 144,
+      "named_slot_count": 1
+    },
+    {
+      "max": 379,
+      "mean": 366.625,
+      "min": 351,
+      "n": 144,
+      "named_slot_count": 2
+    },
+    {
+      "max": 383,
+      "mean": 370.625,
+      "min": 355,
+      "n": 144,
+      "named_slot_count": 4
+    },
+    {
+      "max": 385,
+      "mean": 372.625,
+      "min": 357,
+      "n": 144,
+      "named_slot_count": 8
+    }
+  ],
+  "provider_cochran_armitage": [
+    {
+      "p_two_sided": null,
+      "provider": "anthropic",
+      "z": null
+    },
+    {
+      "p_two_sided": 1.3991312233242148e-15,
+      "provider": "openai",
+      "z": 7.985535912564637
+    },
+    {
+      "p_two_sided": 0.7231198602259339,
+      "provider": "xai",
+      "z": 0.35429226995843593
+    }
+  ],
+  "provider_dose_rates": [
+    {
+      "group": "anthropic_dose_0",
+      "n": 48,
+      "named_slot_count": 0,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "anthropic_dose_1",
+      "n": 48,
+      "named_slot_count": 1,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "anthropic_dose_2",
+      "n": 48,
+      "named_slot_count": 2,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "anthropic_dose_4",
+      "n": 48,
+      "named_slot_count": 4,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "anthropic_dose_8",
+      "n": 48,
+      "named_slot_count": 8,
+      "positive": 0,
+      "provider": "anthropic",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "openai_dose_0",
+      "n": 48,
+      "named_slot_count": 0,
+      "positive": 0,
+      "provider": "openai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "openai_dose_1",
+      "n": 48,
+      "named_slot_count": 1,
+      "positive": 0,
+      "provider": "openai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "openai_dose_2",
+      "n": 48,
+      "named_slot_count": 2,
+      "positive": 0,
+      "provider": "openai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "openai_dose_4",
+      "n": 48,
+      "named_slot_count": 4,
+      "positive": 3,
+      "provider": "openai",
+      "rate": 0.0625,
+      "wilson95_hi": 0.1683543805494635,
+      "wilson95_lo": 0.021483232908389285
+    },
+    {
+      "group": "openai_dose_8",
+      "n": 48,
+      "named_slot_count": 8,
+      "positive": 20,
+      "provider": "openai",
+      "rate": 0.4166666666666667,
+      "wilson95_hi": 0.5571866771602373,
+      "wilson95_lo": 0.2884966777841157
+    },
+    {
+      "group": "xai_dose_0",
+      "n": 48,
+      "named_slot_count": 0,
+      "positive": 0,
+      "provider": "xai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "xai_dose_1",
+      "n": 48,
+      "named_slot_count": 1,
+      "positive": 0,
+      "provider": "xai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "xai_dose_2",
+      "n": 48,
+      "named_slot_count": 2,
+      "positive": 0,
+      "provider": "xai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    },
+    {
+      "group": "xai_dose_4",
+      "n": 48,
+      "named_slot_count": 4,
+      "positive": 1,
+      "provider": "xai",
+      "rate": 0.020833333333333332,
+      "wilson95_hi": 0.10899217995251861,
+      "wilson95_lo": 0.003687110977510649
+    },
+    {
+      "group": "xai_dose_8",
+      "n": 48,
+      "named_slot_count": 8,
+      "positive": 0,
+      "provider": "xai",
+      "rate": 0.0,
+      "wilson95_hi": 0.07410012966611748,
+      "wilson95_lo": 6.938893903907228e-18
+    }
+  ]
+}

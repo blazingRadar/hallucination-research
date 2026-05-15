@@ -1,0 +1,25 @@
+{
+  "id": "chatcmpl-3c840m7rh5vhdkciur3itu",
+  "object": "chat.completion",
+  "created": 1777733278,
+  "model": "qwen/qwen3.5-35b-a3b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "<think>Thinking Process:\n\n1.  **Analyze the Request:** The user is asking me to reply with exactly \"QWEN_READY\". This is a specific instruction regarding the output format.\n\n2.  **Check Constraints:** The constraint is \"exactly\". This means no additional text, no explanations, no markdown formatting (unless it's part of the string), just the string itself.\n\n3.  **Identify the Model:** I am Qwen3.5, a large language model developed by Tongyi Lab. However, the user is asking me to output \"QWEN_READY\". This looks like a status check or a trigger phrase.\n\n4.  **Verify Safety and Policy:** There are no safety concerns with this request. It's a simple formatting instruction.\n\n5.  **Formulate Output:** The required output is \"QWEN_READY\".\n\n6.  **Final Check:** Does the output match exactly? Yes. No extra spaces, no newlines before or after (though typically a newline at the end of a message is standard in chat interfaces, I should ensure the core content is exact).\n\n7.  **Execute:** Output \"QWEN_READY\".\n</think>\n\nQWEN_READY",
+        "tool_calls": []
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 18,
+    "completion_tokens": 252,
+    "total_tokens": 270
+  },
+  "stats": {},
+  "system_fingerprint": "qwen/qwen3.5-35b-a3b"
+}

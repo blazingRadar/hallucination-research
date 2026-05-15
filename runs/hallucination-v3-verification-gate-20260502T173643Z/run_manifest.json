@@ -1,0 +1,25 @@
+{
+  "corpus": "corpus/PROMPT_CORPUS_V3_VERIFICATION_GATE.jsonl",
+  "corpus_sha256": "056c7393625952c6e522de6b6c717a444b0ccc663f87676f174b8efa2431f1d4",
+  "credential_values_saved": false,
+  "max_tokens": 1400,
+  "providers": [
+    {
+      "base_url_host": "api.openai.com",
+      "kind": "openai_compatible",
+      "model": "gpt-5-chat-latest",
+      "provider": "openai",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.anthropic.com",
+      "kind": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v3-verification-gate-20260502T173643Z",
+  "seed": "verification_gate_v3_20260502",
+  "started_at_utc": "2026-05-02T17:36:43Z"
+}

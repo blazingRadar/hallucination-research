@@ -1,0 +1,32 @@
+{
+  "corpus": "corpus/PROMPT_CORPUS_V4_OPEN_STRUCTURE.jsonl",
+  "corpus_sha256": "f3b2daa8e4d391f639be51f97179d5d0202a2a6b479db702e3611d04c9543351",
+  "credential_values_saved": false,
+  "max_tokens": 2500,
+  "providers": [
+    {
+      "base_url_host": "api.openai.com",
+      "kind": "openai_compatible",
+      "model": "gpt-5-chat-latest",
+      "provider": "openai",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.anthropic.com",
+      "kind": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "provider": "anthropic",
+      "temperature": 0
+    },
+    {
+      "base_url_host": "api.x.ai",
+      "kind": "openai_compatible",
+      "model": "grok-4.3",
+      "provider": "xai",
+      "temperature": 0
+    }
+  ],
+  "run_id": "hallucination-v4-open-structure-20260503T032640Z",
+  "seed": "open_structure_v4_20260502",
+  "started_at_utc": "2026-05-03T03:26:40Z"
+}
